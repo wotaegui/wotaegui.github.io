@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>ANDESROBOT</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container-hero">
+                <div class="container hero">
+                    <div class="container-logo">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="logo.jpg" alt="Logo de ANDESROBOT" class="img-logo">
+                            </a>
+                         </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="ourteam.html">OUR TEAM</a></li>
+                        <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="research.html">RESEARCH</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="container about-us-section" id="about-us-section">
+                <h1 class="heading-1">ABOUT US</h1>
+                
+                <div class="carousel-container swiper">                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="carrusel1.jpg" alt="Foto del equipo 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="carrusel2.jpg" alt="Foto del equipo 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/about-slide-3.jpg" alt="Foto del equipo 3">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div> 
+                </div>
+
+                <p class="about-text">Aquí iría el texto principal sobre ANDESROBOT y la misión del equipo.</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container container-footer">
+                            
+                <div class="copyright">
+                    <p>
+                        Desarrollado por ANDESROBOT &copy; 2025
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.carousel-container', {
+                autoplay: {
+                    delay: 5000, 
+                    disableOnInteraction: false, 
+                },
+                loop: true, 
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
+</html>
